@@ -18,12 +18,12 @@ class Db
         return $res;
     }
 
-    public function query($query)
+    public function query($query, $class)
     {
         $statement = $this->conn->prepare($query);
         $res = $statement->execute();
         if (false !== $res) {
-            return $statement->fetchAll();
+            return $statement->fetchAll(\PDO::FETCH_CLASS, $class);
         }
         return [];
     }

@@ -8,7 +8,7 @@ abstract class Model
 
     public static function findAll()
     {
-        $db = new Db();
+        $db = Db::getInstance();
         return $db->query(
             'select * from ' . static::TABLE,
             static::class

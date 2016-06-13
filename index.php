@@ -1,6 +1,4 @@
 <?php
 
-require __DIR__ . '/autoload.php';
-
-var_dump(\App\Models\User::findAll());
+include __DIR__ . '/App/templates/index.php';
 

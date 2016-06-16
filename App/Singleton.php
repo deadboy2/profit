@@ -1,13 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: root
- * Date: 10.06.2016
- * Time: 18:49
- */
 
 namespace App;
-
 
 trait Singleton
 {
@@ -18,10 +11,15 @@ trait Singleton
 
     }
 
+    protected function __clone()
+    {
+
+    }
+
     public static function getInstance()
     {
         if (static::$instance === null) {
-            static::$instance = new static;
+            static::$instance = new static();
         }
         return static::$instance;
     }

@@ -1,13 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: root
- * Date: 10.06.2016
- * Time: 18:45
- */
 
 namespace App;
-
 
 class DB
 {
@@ -19,11 +12,21 @@ class DB
         $this->conn = new \PDO('mysql:host=127.0.0.1;dbname=test', 'root', '');
     }
 
-    public function ex($query)
+    public function execute($sql, $params = [])
     {
-        $statement = $this->conn->prepare($query);
-        $res = $statement->execute();
-        return $res;
+        $statement = $this->conn->prepare($sql);
+        $result = $statement->execute($params);
+        return $result;
+    }
+
+    public function query($sql, $class)
+    {
+        $statement = $this->conn->prepare($sql);
+        $result = $statement->execute();
+        if ($result !== null) {
+            return $statement->fetchAll(\PDO::FETCH_CLASS, $class);
+        }
+        return [];
     }
 
 }

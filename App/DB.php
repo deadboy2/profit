@@ -19,10 +19,10 @@ class DB
         return $result;
     }
 
-    public function query($sql, $class)
+    public function query($sql,$params, $class)
     {
         $statement = $this->conn->prepare($sql);
-        $result = $statement->execute();
+        $result = $statement->execute($params);
         if ($result !== null) {
             return $statement->fetchAll(\PDO::FETCH_CLASS, $class);
         }

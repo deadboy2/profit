@@ -11,11 +11,6 @@ trait Singleton
 
     }
 
-    protected function __clone()
-    {
-
-    }
-
     public static function getInstance()
     {
         if (static::$instance === null) {

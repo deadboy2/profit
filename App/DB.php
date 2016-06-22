@@ -12,21 +12,20 @@ class DB
         $this->conn = new \PDO('mysql:host=127.0.0.1;dbname=test', 'root', '');
     }
 
-    public function execute($sql, $params = [])
+    public function execute($sql, $prop = [])
     {
         $statement = $this->conn->prepare($sql);
-        $result = $statement->execute($params);
+        $result = $statement->execute($prop);
         return $result;
     }
 
-    public function query($sql,$params, $class)
+    public function query($sql, $prop = [], $class)
     {
         $statement = $this->conn->prepare($sql);
-        $result = $statement->execute($params);
+        $result = $statement->execute($prop);
         if ($result !== null) {
             return $statement->fetchAll(\PDO::FETCH_CLASS, $class);
         }
         return [];
     }
-
 }

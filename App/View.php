@@ -4,13 +4,23 @@ namespace App;
 
 class View
 {
-    use Data;
+    protected $data = [];
 
-    public function render($template)
+    public function __set($name, $value)
+    {
+        $this->data[$name] = $value;
+    }
+
+    public function __get($name)
+    {
+        return $this->data[$name];
+    }
+
+    protected function render($template)
     {
         ob_start();
 
-        foreach ($this->data as $k => $v ) {
+        foreach ($this->data as $k => $v) {
             $$k = $v;
         }
 

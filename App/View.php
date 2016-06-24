@@ -16,7 +16,7 @@ class View
         return $this->data[$name];
     }
 
-    protected function render($template)
+    public function render($template)
     {
         ob_start();
 
@@ -25,6 +25,7 @@ class View
         }
 
         include $template;
+
         $content = ob_get_contents();
 
         ob_end_clean();

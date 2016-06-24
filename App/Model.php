@@ -12,15 +12,6 @@ abstract class Model
         return empty($this->id);
     }
 
-    public function save()
-    {
-        if (!$this->isNew()) {
-            $this->update();
-        } else {
-            $this->insert();
-        }
-    }
-
     public static function findAll()
     {
         $db = DB::getInstance();
@@ -30,7 +21,7 @@ abstract class Model
     public static function findById($id)
     {
         $db = DB::getInstance();
-        $res = $db->query('select * from ' . static::TABLE . ' where id=:id', [':id' => $id], static::class)[0];
+        $res =  $db->query('select * from ' . static::TABLE . ' where id=' . $id, [], static::class)[0];
         if (!empty($res)) {
             return $res;
         }
@@ -54,7 +45,7 @@ abstract class Model
             $values[':' . $k] = $v;
         }
 
-        $sql = 'insert into ' . static::TABLE . ' (' . implode(',', $columns) . ') values(' . implode(',', array_keys($values)) . ')';
+        $sql = 'insert into ' . static::TABLE . ' (' . implode(',', $columns) . ') values (' . implode(',', array_keys($values)) . ')';
         $db = DB::getInstance();
         $db->execute($sql, $values);
     }
@@ -65,21 +56,30 @@ abstract class Model
             return;
         }
 
-        $values = [];
-        $valuess = [];
+        $list1 = [];
+        $list2 = [];
         $id = '';
 
-        foreach($this as $k => $v) {
+        foreach ($this as $k => $v) {
             if ('id' == $k) {
                 $id = $v;
             }
-            $values[] = $k . '=:' . $k;
-            $valuess[':' . $k] = $v;
+            $list1[] = $k . '=:' . $k;
+            $list2[':' . $k] = $v;
         }
 
-        $sql = 'update ' . static::TABLE . ' set ' . implode(',', $values) . ' where id=' . $id;
+        $sql = 'update ' . static::TABLE . ' set ' . implode(',', $list1) . ' where id=' . $id;
         $db = DB::getInstance();
-        $db->execute($sql, $valuess);
+        $db->execute($sql, $list2);
+    }
+
+    public function save()
+    {
+        if (!$this->isNew()) {
+            $this->update();
+        } else {
+            $this->insert();
+        }
     }
 
     public function delete()
@@ -90,14 +90,14 @@ abstract class Model
 
         $id = '';
 
-        foreach($this as $k => $v) {
+        foreach ($this as $k => $v) {
             if ('id' == $k) {
                 $id = $v;
             }
         }
 
-        $db = DB::getInstance();
         $sql = 'delete from ' . static::TABLE . ' where id=:id';
+        $db = DB::getInstance();
         $db->execute($sql, [':id' => $id]);
     }
 }

@@ -16,7 +16,7 @@ class News extends Model
     {
         switch ($name) {
             case 'author':
-                return Author::findById($this->author_id);
+                return Author::findById($this->id);
                 break;
             default:
                 return null;

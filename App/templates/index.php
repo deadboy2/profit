@@ -15,6 +15,7 @@
 
 <?php foreach ($news as $article): ?>
     <div class="block">
+        <p>News Id: <?= $article->id ?></p>
         <p>News Title: <?= $article->title ?></p>
         <p>News Text: <?= $article->text ?></p>
         <?php if (!empty($article->author)): ?>

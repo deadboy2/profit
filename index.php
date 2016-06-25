@@ -2,7 +2,5 @@
 header('Content-Type: text/html; charset=utf-8');
 require __DIR__ . '/autoload.php';
 
-$view = new \App\View();
-$view->news = \App\Models\News::findAll();
-
-$view->display(__DIR__ . '/App/templates/index.php');
+$controller = new \App\Controllers\News();
+$controller->action('Index');

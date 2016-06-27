@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use App\Exceptions\Database;
 use App\TController;
 
 class News
@@ -17,7 +18,10 @@ class News
     protected function actionOne()
     {
         $id = (int)$_GET['id'];
-        $this->view->article = \App\Models\News::findById($id);
+        $res = $this->view->article = \App\Models\News::findById($id);
+        if ($res === null) {
+            throw new Database('не существующий id');
+        }
         $this->view->display(__DIR__ . '/../templates/one.php');
     }
 }

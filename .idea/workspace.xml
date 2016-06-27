@@ -2,18 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05c5e963-fbfb-474a-b9ad-447b55690dd5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/Controllers/Error.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/Exceptions/Database.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/TController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/templates/404.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/Logger.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/TView.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/logs/allLogs.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/logs/log.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Controllers/Error.php" afterPath="$PROJECT_DIR$/App/Controllers/Error.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Controllers/News.php" afterPath="$PROJECT_DIR$/App/Controllers/News.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/DB.php" afterPath="$PROJECT_DIR$/App/DB.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Model.php" afterPath="$PROJECT_DIR$/App/Model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Models/News.php" afterPath="$PROJECT_DIR$/App/Models/News.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/View.php" afterPath="$PROJECT_DIR$/App/View.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/templates/index.php" afterPath="$PROJECT_DIR$/App/templates/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/templates/one.php" afterPath="$PROJECT_DIR$/App/templates/one.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/templates/404.php" afterPath="$PROJECT_DIR$/App/templates/404.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <ignored path="node.iws" />
@@ -88,8 +86,18 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.5">
-              <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+            <state vertical-scroll-proportion="-3.9230769">
+              <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Models/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.1923075">
+              <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -98,18 +106,20 @@
       <file leaf-file-name="Error.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/App/Controllers/Error.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33278957">
-              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-              <folding />
+            <state vertical-scroll-proportion="0.4300932">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding>
+                <element signature="e#35#50#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="404.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/templates/404.php">
+      <file leaf-file-name="TView.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/TView.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.8846154">
-              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+            <state vertical-scroll-proportion="-9.807693">
+              <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -118,80 +128,21 @@
       <file leaf-file-name="News.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Controllers/News.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.115385">
-              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="News.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Models/News.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.807693">
-              <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="one.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/templates/one.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.5384617">
-              <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Author.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Models/Author.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.1923075">
-              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DB.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/DB.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.8846154">
-              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/templates/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.1923075">
-              <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Model.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Model.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.9615384">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state vertical-scroll-proportion="-13.730769">
+              <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
               <folding>
-                <marker date="1467035276776" expanded="true" signature="189:203" placeholder="select * fro... ${static::TABLE}" />
-                <marker date="1467035276776" expanded="true" signature="358:403" placeholder="select * fro... ${static::TABLE}" />
-                <marker date="1467035276776" expanded="true" signature="860:872" placeholder="insert into ${static::TABLE}... " />
-                <marker date="1467035276776" expanded="true" signature="860:895" placeholder="insert into ${static::TABLE}... " />
-                <marker date="1467035276776" expanded="true" signature="860:896" placeholder="insert into ${static::TABLE}... " />
-                <marker date="1467035276776" expanded="true" signature="860:935" placeholder="insert into ${static::TABLE}... " />
-                <marker date="1467035276776" expanded="true" signature="860:936" placeholder="insert into ${static::TABLE}... " />
-                <marker date="1467035276776" expanded="true" signature="860:977" placeholder="insert into ${static::TABLE}... " />
-                <marker date="1467035276776" expanded="true" signature="860:978" placeholder="insert into ${static::TABLE}... " />
-                <marker date="1467035276776" expanded="true" signature="1993:2039" placeholder="delete from " />
+                <element signature="e#35#63#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="404.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/templates/404.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-13.730769">
+              <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -236,10 +187,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/UserController.php" />
-        <option value="$PROJECT_DIR$/reg.php" />
-        <option value="$PROJECT_DIR$/home.php" />
-        <option value="$PROJECT_DIR$/about.php" />
         <option value="$PROJECT_DIR$/contacts.php" />
         <option value="$PROJECT_DIR$/help.php" />
         <option value="$PROJECT_DIR$/header.php" />
@@ -271,22 +218,26 @@
         <option value="$PROJECT_DIR$/autoload.php" />
         <option value="$PROJECT_DIR$/App/Singleton.php" />
         <option value="$PROJECT_DIR$/App/Models/User.php" />
-        <option value="$PROJECT_DIR$/App/View.php" />
         <option value="$PROJECT_DIR$/App/Models/Author.php" />
         <option value="$PROJECT_DIR$/App/templates/index.php" />
-        <option value="$PROJECT_DIR$/App/templates/one.php" />
         <option value="$PROJECT_DIR$/App/Exceptions/Db.php" />
         <option value="$PROJECT_DIR$/App/Exceptions/Query.php" />
         <option value="$PROJECT_DIR$/App/Exceptions/Database.php" />
         <option value="$PROJECT_DIR$/App/Models/News.php" />
-        <option value="$PROJECT_DIR$/App/Model.php" />
         <option value="$PROJECT_DIR$/App/Controllers/404.php" />
         <option value="$PROJECT_DIR$/App/TController.php" />
+        <option value="$PROJECT_DIR$/App/View.php" />
+        <option value="$PROJECT_DIR$/App/TView.php" />
+        <option value="$PROJECT_DIR$/App/Model.php" />
+        <option value="$PROJECT_DIR$/App/templates/one.php" />
         <option value="$PROJECT_DIR$/App/Controllers/News.php" />
         <option value="$PROJECT_DIR$/App/Controllers/Error.php" />
+        <option value="$PROJECT_DIR$/App/logs/log.txt" />
+        <option value="$PROJECT_DIR$/App/DB.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/App/templates/404.php" />
-        <option value="$PROJECT_DIR$/App/DB.php" />
+        <option value="$PROJECT_DIR$/App/Logger.php" />
+        <option value="$PROJECT_DIR$/App/logs/allLogs.txt" />
       </list>
     </option>
   </component>
@@ -300,10 +251,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.5" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="57" />
-    <option name="y" value="31" />
-    <option name="width" value="1751" />
-    <option name="height" value="899" />
+    <option name="x" value="-7" />
+    <option name="width" value="1063" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -361,78 +311,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="App" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="App" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="App" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="App" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Exceptions" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="App" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -644,7 +522,13 @@
       <option name="project" value="LOCAL" />
       <updated>1466847978356</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="+ exceptions + 404 page">
+      <created>1467036885210</created>
+      <option name="number" value="00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1467036885211</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView">
@@ -657,19 +541,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="57" y="31" width="1751" height="899" extended-state="0" />
+    <frame x="-7" y="0" width="1063" height="1047" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12773506" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21535394" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934132" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12924282" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.132466" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32902297" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11925602" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07676969" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2601626" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18965517" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32902297" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288889" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -716,7 +600,8 @@
     <MESSAGE value="+ front Controller" />
     <MESSAGE value="+ mod_rewrite, .htaccess" />
     <MESSAGE value="+ front full" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ front full" />
+    <MESSAGE value="+ exceptions + 404 page" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ exceptions + 404 page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -737,7 +622,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-          <folding />
+          <folding>
+            <element signature="e#35#63#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -778,16 +665,16 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1467035276776" expanded="true" signature="189:203" placeholder="select * fro... ${static::TABLE}" />
-            <marker date="1467035276776" expanded="true" signature="358:403" placeholder="select * fro... ${static::TABLE}" />
-            <marker date="1467035276776" expanded="true" signature="860:872" placeholder="insert into ${static::TABLE}... " />
-            <marker date="1467035276776" expanded="true" signature="860:895" placeholder="insert into ${static::TABLE}... " />
-            <marker date="1467035276776" expanded="true" signature="860:896" placeholder="insert into ${static::TABLE}... " />
-            <marker date="1467035276776" expanded="true" signature="860:935" placeholder="insert into ${static::TABLE}... " />
-            <marker date="1467035276776" expanded="true" signature="860:936" placeholder="insert into ${static::TABLE}... " />
-            <marker date="1467035276776" expanded="true" signature="860:977" placeholder="insert into ${static::TABLE}... " />
-            <marker date="1467035276776" expanded="true" signature="860:978" placeholder="insert into ${static::TABLE}... " />
-            <marker date="1467035276776" expanded="true" signature="1993:2039" placeholder="delete from " />
+            <marker date="1467039245502" expanded="true" signature="189:203" placeholder="select * fro... ${static::TABLE}" />
+            <marker date="1467039245502" expanded="true" signature="358:403" placeholder="select * fro... ${static::TABLE}" />
+            <marker date="1467039245502" expanded="true" signature="860:872" placeholder="insert into ${static::TABLE}... " />
+            <marker date="1467039245502" expanded="true" signature="860:895" placeholder="insert into ${static::TABLE}... " />
+            <marker date="1467039245502" expanded="true" signature="860:896" placeholder="insert into ${static::TABLE}... " />
+            <marker date="1467039245502" expanded="true" signature="860:935" placeholder="insert into ${static::TABLE}... " />
+            <marker date="1467039245502" expanded="true" signature="860:936" placeholder="insert into ${static::TABLE}... " />
+            <marker date="1467039245502" expanded="true" signature="860:977" placeholder="insert into ${static::TABLE}... " />
+            <marker date="1467039245502" expanded="true" signature="860:978" placeholder="insert into ${static::TABLE}... " />
+            <marker date="1467039245502" expanded="true" signature="1993:2039" placeholder="delete from " />
           </folding>
         </state>
       </provider>
@@ -880,22 +767,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/View.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42372882">
-          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Models/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31694916">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/autoload.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -927,6 +798,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/App/View.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.9230769">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/App/Models/Author.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.1923075">
@@ -935,30 +814,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/templates/one.php">
+    <entry file="file://$PROJECT_DIR$/App/Models/News.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.5008157">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9615384">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <marker date="1467035276776" expanded="true" signature="189:203" placeholder="select * fro... ${static::TABLE}" />
-            <marker date="1467035276776" expanded="true" signature="358:403" placeholder="select * fro... ${static::TABLE}" />
-            <marker date="1467035276776" expanded="true" signature="860:872" placeholder="insert into ${static::TABLE}... " />
-            <marker date="1467035276776" expanded="true" signature="860:895" placeholder="insert into ${static::TABLE}... " />
-            <marker date="1467035276776" expanded="true" signature="860:896" placeholder="insert into ${static::TABLE}... " />
-            <marker date="1467035276776" expanded="true" signature="860:935" placeholder="insert into ${static::TABLE}... " />
-            <marker date="1467035276776" expanded="true" signature="860:936" placeholder="insert into ${static::TABLE}... " />
-            <marker date="1467035276776" expanded="true" signature="860:977" placeholder="insert into ${static::TABLE}... " />
-            <marker date="1467035276776" expanded="true" signature="860:978" placeholder="insert into ${static::TABLE}... " />
-            <marker date="1467035276776" expanded="true" signature="1993:2039" placeholder="delete from " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -970,51 +830,114 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Models/News.php">
+    <entry file="file://$PROJECT_DIR$/App/templates/one.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.807693">
-          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.27732465">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.038462">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <marker date="1467039245502" expanded="true" signature="189:203" placeholder="select * fro... ${static::TABLE}" />
+            <marker date="1467039245502" expanded="true" signature="358:403" placeholder="select * fro... ${static::TABLE}" />
+            <marker date="1467039245502" expanded="true" signature="860:872" placeholder="insert into ${static::TABLE}... " />
+            <marker date="1467039245502" expanded="true" signature="860:895" placeholder="insert into ${static::TABLE}... " />
+            <marker date="1467039245502" expanded="true" signature="860:896" placeholder="insert into ${static::TABLE}... " />
+            <marker date="1467039245502" expanded="true" signature="860:935" placeholder="insert into ${static::TABLE}... " />
+            <marker date="1467039245502" expanded="true" signature="860:936" placeholder="insert into ${static::TABLE}... " />
+            <marker date="1467039245502" expanded="true" signature="860:977" placeholder="insert into ${static::TABLE}... " />
+            <marker date="1467039245502" expanded="true" signature="860:978" placeholder="insert into ${static::TABLE}... " />
+            <marker date="1467039245502" expanded="true" signature="1993:2039" placeholder="delete from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.1923075">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/logs/log.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/DB.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8846154">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.5206391">
+          <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/templates/404.php">
+    <entry file="file://$PROJECT_DIR$/App/TView.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8846154">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Controllers/News.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.115385">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        <state vertical-scroll-proportion="-9.807693">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.5">
-          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+        <state vertical-scroll-proportion="-3.9230769">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Controllers/News.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.730769">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+          <folding>
+            <element signature="e#35#63#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/templates/404.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.730769">
+          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/logs/allLogs.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.1158302">
+          <caret line="228" column="0" selection-start-line="228" selection-start-column="0" selection-end-line="228" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Logger.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13581891">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Controllers/Error.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33278957">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding />
+        <state vertical-scroll-proportion="0.4300932">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#35#50#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

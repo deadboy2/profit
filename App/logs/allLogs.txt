@@ -1,0 +1,228 @@
+
+exception 'App\Exceptions\Database' with message 'не существующий id' in C:\wamp\www\node\App\Controllers\News.php:23
+Stack trace:
+#0 C:\wamp\www\node\App\TController.php(17): App\Controllers\News->actionOne()
+#1 C:\wamp\www\node\index.php(26): App\Controllers\News->action('One')
+#2 {main}
+
+exception 'App\Exceptions\Database' with message 'не существующий id' in C:\wamp\www\node\App\Controllers\News.php:23
+Stack trace:
+#0 C:\wamp\www\node\App\TController.php(17): App\Controllers\News->actionOne()
+#1 C:\wamp\www\node\index.php(26): App\Controllers\News->action('One')
+#2 {main}
+
+exception 'App\Exceptions\Database' with message 'не существующий id' in C:\wamp\www\node\App\Controllers\News.php:23
+Stack trace:
+#0 C:\wamp\www\node\App\TController.php(17): App\Controllers\News->actionOne()
+#1 C:\wamp\www\node\index.php(26): App\Controllers\News->action('One')
+#2 {main}
+
+exception 'App\Exceptions\Database' with message 'не существующий id' in C:\wamp\www\node\App\Controllers\News.php:23
+Stack trace:
+#0 C:\wamp\www\node\App\TController.php(17): App\Controllers\News->actionOne()
+#1 C:\wamp\www\node\index.php(26): App\Controllers\News->action('One')
+#2 {main}
+
+exception 'App\Exceptions\Database' with message 'не существующий id' in C:\wamp\www\node\App\Controllers\News.php:23
+Stack trace:
+#0 C:\wamp\www\node\App\TController.php(17): App\Controllers\News->actionOne()
+#1 C:\wamp\www\node\index.php(26): App\Controllers\News->action('One')
+#2 {main}
+
+exception 'App\Exceptions\Database' with message 'не существующий id' in C:\wamp\www\node\App\Controllers\News.php:23
+Stack trace:
+#0 C:\wamp\www\node\App\TController.php(17): App\Controllers\News->actionOne()
+#1 C:\wamp\www\node\index.php(26): App\Controllers\News->action('One')
+#2 {main}
+
+exception 'App\Exceptions\Database' with message 'не существующий id' in C:\wamp\www\node\App\Controllers\News.php:23
+Stack trace:
+#0 C:\wamp\www\node\App\TController.php(17): App\Controllers\News->actionOne()
+#1 C:\wamp\www\node\index.php(26): App\Controllers\News->action('One')
+#2 {main}
+
+exception 'App\Exceptions\Database' with message 'не существующий id' in C:\wamp\www\node\App\Controllers\News.php:23
+Stack trace:
+#0 C:\wamp\www\node\App\TController.php(17): App\Controllers\News->actionOne()
+#1 C:\wamp\www\node\index.php(26): App\Controllers\News->action('One')
+#2 {main}
+
+exception 'App\Exceptions\Database' with message 'не существующий id' in C:\wamp\www\node\App\Controllers\News.php:23
+Stack trace:
+#0 C:\wamp\www\node\App\TController.php(17): App\Controllers\News->actionOne()
+#1 C:\wamp\www\node\index.php(26): App\Controllers\News->action('One')
+#2 {main}
+
+exception 'App\Exceptions\Database' with message 'не существующий id' in C:\wamp\www\node\App\Controllers\News.php:23
+Stack trace:
+#0 C:\wamp\www\node\App\TController.php(17): App\Controllers\News->actionOne()
+#1 C:\wamp\www\node\index.php(26): App\Controllers\News->action('One')
+#2 {main}
+
+exception 'App\Exceptions\Database' with message 'не существующий id' in C:\wamp\www\node\App\Controllers\News.php:23
+Stack trace:
+#0 C:\wamp\www\node\App\TController.php(17): App\Controllers\News->actionOne()
+#1 C:\wamp\www\node\index.php(26): App\Controllers\News->action('One')
+#2 {main}
+
+exception 'App\Exceptions\Database' with message 'ошибка в подключении к бд' in C:\wamp\www\node\App\DB.php:17
+Stack trace:
+#0 C:\wamp\www\node\App\Singleton.php(17): App\DB->__construct()
+#1 C:\wamp\www\node\App\Model.php(21): App\DB::getInstance()
+#2 C:\wamp\www\node\App\Controllers\News.php(21): App\Model::findById(3)
+#3 C:\wamp\www\node\App\TController.php(17): App\Controllers\News->actionOne()
+#4 C:\wamp\www\node\index.php(26): App\Controllers\News->action('One')
+#5 {main}
+
+exception 'App\Exceptions\Database' with message 'ошибка в подключении к бд' in C:\wamp\www\node\App\DB.php:17
+Stack trace:
+#0 C:\wamp\www\node\App\Singleton.php(17): App\DB->__construct()
+#1 C:\wamp\www\node\App\Model.php(21): App\DB::getInstance()
+#2 C:\wamp\www\node\App\Controllers\News.php(21): App\Model::findById(3)
+#3 C:\wamp\www\node\App\TController.php(17): App\Controllers\News->actionOne()
+#4 C:\wamp\www\node\index.php(26): App\Controllers\News->action('One')
+#5 {main}
+
+exception 'App\Exceptions\Database' with message 'ошибка в подключении к бд' in C:\wamp\www\node\App\DB.php:17
+Stack trace:
+#0 C:\wamp\www\node\App\Singleton.php(17): App\DB->__construct()
+#1 C:\wamp\www\node\App\Model.php(21): App\DB::getInstance()
+#2 C:\wamp\www\node\App\Controllers\News.php(21): App\Model::findById(3)
+#3 C:\wamp\www\node\App\TController.php(17): App\Controllers\News->actionOne()
+#4 C:\wamp\www\node\index.php(26): App\Controllers\News->action('One')
+#5 {main}
+
+exception 'App\Exceptions\Database' with message 'ошибка в подключении к бд' in C:\wamp\www\node\App\DB.php:17
+Stack trace:
+#0 C:\wamp\www\node\App\Singleton.php(17): App\DB->__construct()
+#1 C:\wamp\www\node\App\Model.php(21): App\DB::getInstance()
+#2 C:\wamp\www\node\App\Controllers\News.php(21): App\Model::findById(3)
+#3 C:\wamp\www\node\App\TController.php(17): App\Controllers\News->actionOne()
+#4 C:\wamp\www\node\index.php(26): App\Controllers\News->action('One')
+#5 {main}
+
+exception 'App\Exceptions\Database' with message 'ошибка в подключении к бд' in C:\wamp\www\node\App\DB.php:17
+Stack trace:
+#0 C:\wamp\www\node\App\Singleton.php(17): App\DB->__construct()
+#1 C:\wamp\www\node\App\Model.php(21): App\DB::getInstance()
+#2 C:\wamp\www\node\App\Controllers\News.php(21): App\Model::findById(3)
+#3 C:\wamp\www\node\App\TController.php(17): App\Controllers\News->actionOne()
+#4 C:\wamp\www\node\index.php(26): App\Controllers\News->action('One')
+#5 {main}
+
+exception 'App\Exceptions\Database' with message 'ошибка в подключении к бд' in C:\wamp\www\node\App\DB.php:17
+Stack trace:
+#0 C:\wamp\www\node\App\Singleton.php(17): App\DB->__construct()
+#1 C:\wamp\www\node\App\Model.php(21): App\DB::getInstance()
+#2 C:\wamp\www\node\App\Controllers\News.php(21): App\Model::findById(3)
+#3 C:\wamp\www\node\App\TController.php(17): App\Controllers\News->actionOne()
+#4 C:\wamp\www\node\index.php(26): App\Controllers\News->action('One')
+#5 {main}
+
+exception 'App\Exceptions\Database' with message 'ошибка в подключении к бд' in C:\wamp\www\node\App\DB.php:17
+Stack trace:
+#0 C:\wamp\www\node\App\Singleton.php(17): App\DB->__construct()
+#1 C:\wamp\www\node\App\Model.php(21): App\DB::getInstance()
+#2 C:\wamp\www\node\App\Controllers\News.php(21): App\Model::findById(3)
+#3 C:\wamp\www\node\App\TController.php(17): App\Controllers\News->actionOne()
+#4 C:\wamp\www\node\index.php(26): App\Controllers\News->action('One')
+#5 {main}
+
+exception 'App\Exceptions\Database' with message 'ошибка в подключении к бд' in C:\wamp\www\node\App\DB.php:17
+Stack trace:
+#0 C:\wamp\www\node\App\Singleton.php(17): App\DB->__construct()
+#1 C:\wamp\www\node\App\Model.php(21): App\DB::getInstance()
+#2 C:\wamp\www\node\App\Controllers\News.php(21): App\Model::findById(3)
+#3 C:\wamp\www\node\App\TController.php(17): App\Controllers\News->actionOne()
+#4 C:\wamp\www\node\index.php(26): App\Controllers\News->action('One')
+#5 {main}
+
+exception 'App\Exceptions\Database' with message 'ошибка в подключении к бд' in C:\wamp\www\node\App\DB.php:17
+Stack trace:
+#0 C:\wamp\www\node\App\Singleton.php(17): App\DB->__construct()
+#1 C:\wamp\www\node\App\Model.php(21): App\DB::getInstance()
+#2 C:\wamp\www\node\App\Controllers\News.php(21): App\Model::findById(3)
+#3 C:\wamp\www\node\App\TController.php(17): App\Controllers\News->actionOne()
+#4 C:\wamp\www\node\index.php(26): App\Controllers\News->action('One')
+#5 {main}
+
+exception 'App\Exceptions\Database' with message 'ошибка в подключении к бд' in C:\wamp\www\node\App\DB.php:17
+Stack trace:
+#0 C:\wamp\www\node\App\Singleton.php(17): App\DB->__construct()
+#1 C:\wamp\www\node\App\Model.php(21): App\DB::getInstance()
+#2 C:\wamp\www\node\App\Controllers\News.php(21): App\Model::findById(3)
+#3 C:\wamp\www\node\App\TController.php(17): App\Controllers\News->actionOne()
+#4 C:\wamp\www\node\index.php(26): App\Controllers\News->action('One')
+#5 {main}
+
+exception 'App\Exceptions\Database' with message 'ошибка в подключении к бд' in C:\wamp\www\node\App\DB.php:17
+Stack trace:
+#0 C:\wamp\www\node\App\Singleton.php(17): App\DB->__construct()
+#1 C:\wamp\www\node\App\Model.php(21): App\DB::getInstance()
+#2 C:\wamp\www\node\App\Controllers\News.php(21): App\Model::findById(3)
+#3 C:\wamp\www\node\App\TController.php(17): App\Controllers\News->actionOne()
+#4 C:\wamp\www\node\index.php(26): App\Controllers\News->action('One')
+#5 {main}
+
+exception 'App\Exceptions\Database' with message 'ошибка в подключении к бд' in C:\wamp\www\node\App\DB.php:17
+Stack trace:
+#0 C:\wamp\www\node\App\Singleton.php(17): App\DB->__construct()
+#1 C:\wamp\www\node\App\Model.php(21): App\DB::getInstance()
+#2 C:\wamp\www\node\App\Controllers\News.php(21): App\Model::findById(3)
+#3 C:\wamp\www\node\App\TController.php(17): App\Controllers\News->actionOne()
+#4 C:\wamp\www\node\index.php(26): App\Controllers\News->action('One')
+#5 {main}
+
+exception 'App\Exceptions\Database' with message 'ошибка в подключении к бд' in C:\wamp\www\node\App\DB.php:17
+Stack trace:
+#0 C:\wamp\www\node\App\Singleton.php(17): App\DB->__construct()
+#1 C:\wamp\www\node\App\Model.php(21): App\DB::getInstance()
+#2 C:\wamp\www\node\App\Controllers\News.php(21): App\Model::findById(3)
+#3 C:\wamp\www\node\App\TController.php(17): App\Controllers\News->actionOne()
+#4 C:\wamp\www\node\index.php(26): App\Controllers\News->action('One')
+#5 {main}
+
+exception 'App\Exceptions\Database' with message 'ошибка в подключении к бд' in C:\wamp\www\node\App\DB.php:17
+Stack trace:
+#0 C:\wamp\www\node\App\Singleton.php(17): App\DB->__construct()
+#1 C:\wamp\www\node\App\Model.php(21): App\DB::getInstance()
+#2 C:\wamp\www\node\App\Controllers\News.php(21): App\Model::findById(3)
+#3 C:\wamp\www\node\App\TController.php(17): App\Controllers\News->actionOne()
+#4 C:\wamp\www\node\index.php(26): App\Controllers\News->action('One')
+#5 {main}
+
+exception 'App\Exceptions\Database' with message 'не существующий id' in C:\wamp\www\node\App\Controllers\News.php:23
+Stack trace:
+#0 C:\wamp\www\node\App\TController.php(17): App\Controllers\News->actionOne()
+#1 C:\wamp\www\node\index.php(26): App\Controllers\News->action('One')
+#2 {main}
+
+exception 'App\Exceptions\Database' with message 'не существующий id' in C:\wamp\www\node\App\Controllers\News.php:23
+Stack trace:
+#0 C:\wamp\www\node\App\TController.php(17): App\Controllers\News->actionOne()
+#1 C:\wamp\www\node\index.php(26): App\Controllers\News->action('One')
+#2 {main}
+
+exception 'App\Exceptions\Database' with message 'не существующий id' in C:\wamp\www\node\App\Controllers\News.php:23
+Stack trace:
+#0 C:\wamp\www\node\App\TController.php(17): App\Controllers\News->actionOne()
+#1 C:\wamp\www\node\index.php(26): App\Controllers\News->action('One')
+#2 {main}
+
+exception 'App\Exceptions\Database' with message 'не существующий id' in C:\wamp\www\node\App\Controllers\News.php:23
+Stack trace:
+#0 C:\wamp\www\node\App\TController.php(17): App\Controllers\News->actionOne()
+#1 C:\wamp\www\node\index.php(26): App\Controllers\News->action('One')
+#2 {main}
+
+exception 'App\Exceptions\Database' with message 'не существующий id' in C:\wamp\www\node\App\Controllers\News.php:23
+Stack trace:
+#0 C:\wamp\www\node\App\TController.php(17): App\Controllers\News->actionOne()
+#1 C:\wamp\www\node\index.php(26): App\Controllers\News->action('One')
+#2 {main}
+
+exception 'App\Exceptions\Database' with message 'не существующий id' in C:\wamp\www\node\App\Controllers\News.php:23
+Stack trace:
+#0 C:\wamp\www\node\App\TController.php(17): App\Controllers\News->actionOne()
+#1 C:\wamp\www\node\index.php(26): App\Controllers\News->action('One')
+#2 {main}

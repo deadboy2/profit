@@ -28,14 +28,11 @@ class DB
     public function query($sql, $prop = [], $class)
     {
 
-        try {
-            $statement = $this->conn->prepare($sql);
-            $result = $statement->execute($prop);
-            if ($result !== null) {
-                return $statement->fetchAll(\PDO::FETCH_CLASS, $class);
-            }
-        } catch (\PDOException $e) {
-            throw new Database('ошибка в запросе к бд');
+
+        $statement = $this->conn->prepare($sql);
+        $result = $statement->execute($prop);
+        if ($result !== null) {
+            return $statement->fetchAll(\PDO::FETCH_CLASS, $class);
         }
 
         return [];

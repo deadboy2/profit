@@ -26,6 +26,7 @@ try {
     $newsController->action($art);
 } catch (\App\Exceptions\Database $e) {
     $errorController->log = $e;
+    $errorController->setLogg();
     $errorController->action($art);
 }
 

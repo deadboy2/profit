@@ -20,7 +20,7 @@ class News
         $id = (int)$_GET['id'];
         $res = $this->view->article = \App\Models\News::findById($id);
         if ($res === null) {
-            throw new Database('не существующий id');
+            throw new Database('id not found');
         }
         $this->view->display(__DIR__ . '/../templates/one.php');
     }

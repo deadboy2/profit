@@ -14,7 +14,7 @@ class DB
         try {
             $this->conn = new \PDO('mysql:host=127.0.0.1;dbname=test', 'root', '', array(\PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''));
         } catch (\PDOException $e) {
-            throw new Database('ошибка в подключении к бд');
+            throw new Database('error in connected database');
         }
     }
 

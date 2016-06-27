@@ -238,3 +238,63 @@ Stack trace:
 #0 C:\wamp\www\node\App\TController.php(17): App\Controllers\News->actionOne()
 #1 C:\wamp\www\node\index.php(26): App\Controllers\News->action('One')
 #2 {main}
+
+exception 'App\Exceptions\Database' with message 'id not found' in C:\wamp\www\node\App\Controllers\News.php:23
+Stack trace:
+#0 C:\wamp\www\node\App\TController.php(17): App\Controllers\News->actionOne()
+#1 C:\wamp\www\node\index.php(26): App\Controllers\News->action('One')
+#2 {main}
+
+exception 'App\Exceptions\Database' with message 'id not found' in C:\wamp\www\node\App\Controllers\News.php:23
+Stack trace:
+#0 C:\wamp\www\node\App\TController.php(17): App\Controllers\News->actionOne()
+#1 C:\wamp\www\node\index.php(26): App\Controllers\News->action('One')
+#2 {main}
+
+exception 'App\Exceptions\Database' with message 'id not found' in C:\wamp\www\node\App\Controllers\News.php:23
+Stack trace:
+#0 C:\wamp\www\node\App\TController.php(17): App\Controllers\News->actionOne()
+#1 C:\wamp\www\node\index.php(26): App\Controllers\News->action('One')
+#2 {main}
+
+exception 'App\Exceptions\Database' with message 'id not found' in C:\wamp\www\node\App\Controllers\News.php:23
+Stack trace:
+#0 C:\wamp\www\node\App\TController.php(17): App\Controllers\News->actionOne()
+#1 C:\wamp\www\node\index.php(26): App\Controllers\News->action('One')
+#2 {main}
+
+exception 'App\Exceptions\Database' with message 'id not found' in C:\wamp\www\node\App\Controllers\News.php:23
+Stack trace:
+#0 C:\wamp\www\node\App\TController.php(17): App\Controllers\News->actionOne()
+#1 C:\wamp\www\node\index.php(26): App\Controllers\News->action('One')
+#2 {main}
+
+exception 'App\Exceptions\Database' with message 'id not found' in C:\wamp\www\node\App\Controllers\News.php:23
+Stack trace:
+#0 C:\wamp\www\node\App\TController.php(17): App\Controllers\News->actionOne()
+#1 C:\wamp\www\node\index.php(26): App\Controllers\News->action('One')
+#2 {main}
+
+exception 'App\Exceptions\Database' with message 'id not found' in C:\wamp\www\node\App\Controllers\News.php:23
+Stack trace:
+#0 C:\wamp\www\node\App\TController.php(17): App\Controllers\News->actionOne()
+#1 C:\wamp\www\node\index.php(26): App\Controllers\News->action('One')
+#2 {main}
+
+exception 'App\Exceptions\Database' with message 'id not found' in C:\wamp\www\node\App\Controllers\News.php:23
+Stack trace:
+#0 C:\wamp\www\node\App\TController.php(17): App\Controllers\News->actionOne()
+#1 C:\wamp\www\node\index.php(26): App\Controllers\News->action('One')
+#2 {main}
+
+exception 'App\Exceptions\Database' with message 'id not found' in C:\wamp\www\node\App\Controllers\News.php:23
+Stack trace:
+#0 C:\wamp\www\node\App\TController.php(17): App\Controllers\News->actionOne()
+#1 C:\wamp\www\node\index.php(21): App\Controllers\News->action('One')
+#2 {main}
+
+exception 'App\Exceptions\Database' with message 'id not found' in C:\wamp\www\node\App\Controllers\News.php:23
+Stack trace:
+#0 C:\wamp\www\node\App\TController.php(17): App\Controllers\News->actionOne()
+#1 C:\wamp\www\node\index.php(21): App\Controllers\News->action('One')
+#2 {main}

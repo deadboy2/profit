@@ -2,27 +2,16 @@
 
 namespace App\Controllers;
 
-use App\View;
+use App\TController;
 
 class News
 {
-    protected $view;
-
-    function __construct()
-    {
-        $this->view = new View();
-    }
+    use TController;
 
     protected function actionIndex()
     {
         $this->view->news = \App\Models\News::findAll();
         $this->view->display(__DIR__ . '/../templates/index.php');
-    }
-
-    public function action($action)
-    {
-        $methodName = 'action' . $action;
-        return $this->$methodName();
     }
 
     protected function actionOne()
@@ -31,5 +20,4 @@ class News
         $this->view->article = \App\Models\News::findById($id);
         $this->view->display(__DIR__ . '/../templates/one.php');
     }
-
 }

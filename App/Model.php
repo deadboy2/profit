@@ -7,25 +7,25 @@ abstract class Model
     const TABLE = '';
     public $id;
 
-    public function isNew()
-    {
-        return empty($this->id);
-    }
-
     public static function findAll()
     {
+
         $db = DB::getInstance();
         return $db->query('select * from ' . static::TABLE, [], static::class);
+
     }
 
     public static function findById($id)
     {
+
         $db = DB::getInstance();
-        $res =  $db->query('select * from ' . static::TABLE . ' where id=' . $id, [], static::class)[0];
-        if (!empty($res)) {
-            return $res;
-        }
-        return false;
+        return $db->query('select * from ' . static::TABLE . ' where id=' . $id, [], static::class)[0];
+
+    }
+
+    public function isNew()
+    {
+        return empty($this->id);
     }
 
     public function insert()
@@ -56,29 +56,29 @@ abstract class Model
             return;
         }
 
-        $list1 = [];
-        $list2 = [];
+        $columns = [];
+        $values = [];
         $id = '';
 
         foreach ($this as $k => $v) {
             if ('id' == $k) {
                 $id = $v;
             }
-            $list1[] = $k . '=:' . $k;
-            $list2[':' . $k] = $v;
+            $columns[] = $k . '=:' . $k;
+            $values[':' . $k] = $v;
         }
 
-        $sql = 'update ' . static::TABLE . ' set ' . implode(',', $list1) . ' where id=' . $id;
+        $sql = 'update ' . static::TABLE . ' set ' . implode(',', $columns) . ' where id=' . $id;
         $db = DB::getInstance();
-        $db->execute($sql, $list2);
+        $db->execute($sql, $values);
     }
 
     public function save()
     {
-        if (!$this->isNew()) {
-            $this->update();
-        } else {
+        if ($this->isNew()) {
             $this->insert();
+        } else {
+            $this->update();
         }
     }
 

@@ -2,6 +2,8 @@
 
 namespace App;
 
+use App\Exceptions\Database;
+
 class DB
 {
     use Singleton;
@@ -9,7 +11,11 @@ class DB
 
     function __construct()
     {
-        $this->conn = new \PDO('mysql:host=127.0.0.1;dbname=test', 'root', '',array(\PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''));
+        try {
+            $this->conn = new \PDO('mysql:host=127.0.0.1;dbname=test', 'root', '', array(\PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''));
+        } catch (\PDOException $e) {
+            throw new Database('ошибка в подключении к бд');
+        }
     }
 
     public function execute($sql, $prop = [])
@@ -21,11 +27,17 @@ class DB
 
     public function query($sql, $prop = [], $class)
     {
-        $statement = $this->conn->prepare($sql);
-        $result = $statement->execute($prop);
-        if ($result !== null) {
-            return $statement->fetchAll(\PDO::FETCH_CLASS, $class);
+
+        try {
+            $statement = $this->conn->prepare($sql);
+            $result = $statement->execute($prop);
+            if ($result !== null) {
+                return $statement->fetchAll(\PDO::FETCH_CLASS, $class);
+            }
+        } catch (\PDOException $e) {
+            throw new Database('ошибка в запросе к бд');
         }
+
         return [];
     }
 }

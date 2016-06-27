@@ -2,24 +2,30 @@
 require __DIR__ . '/autoload.php';
 
 $url = $_SERVER['REQUEST_URI'];
-$act = '';
+$newsController = new \App\Controllers\News();
+$errorController = new \App\Controllers\Error();
 $id = '';
+$art = '';
 
 if (isset($_GET['id'])) {
-    $id = (int)$_GET['id'];
+    $id = $_GET['id'];
 }
-
-$controller = new \App\Controllers\News();
 
 switch ($url) {
     case '/':
-        $act = 'Index';
+        $art = 'Index';
         break;
     case '/news/?id=' . $id:
-        $act = 'One';
+        $art = 'One';
         break;
     default:
-        $act = 'Index';
+        $art = 'Index';
 }
 
-$controller->action($act);
+try {
+    $newsController->action($art);
+} catch (\App\Exceptions\Database $e) {
+    $errorController->log = $e;
+    $errorController->action($art);
+}
+
